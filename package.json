@@ -1,0 +1,36 @@
+{
+  "name": "push-api-client-javascript",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "clean": "rimraf ./lib",
+    "lint": "eslint --ext .js ./src",
+    "lint:fix": "eslint --ext .js ./src --fix",
+    "lint:watch": "esw --ext .js ./src --fix --watch",
+    "prepublish": "npm run build",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaeleyng/push-api-client-javascript.git"
+  },
+  "author": "Rafael Eyng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaeleyng/push-api-client-javascript/issues"
+  },
+  "homepage": "https://github.com/rafaeleyng/push-api-client-javascript#readme",
+  "devDependencies": {
+    "eslint": "5.3.0",
+    "eslint-config-airbnb-base": "13.2.0",
+    "eslint-plugin-import": "2.18.0",
+    "jest": "24.8.0",
+    "rimraf": "2.6.3"
+  },
+  "dependencies": {
+    "axios": "0.19.0"
+  }
+}
