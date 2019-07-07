@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/rafaeleyng/push-api-client-javascript#readme",
   "devDependencies": {
+    "@babel/cli": "7.5.0",
+    "@babel/core": "7.5.0",
+    "@babel/preset-env": "7.5.0",
     "eslint": "5.3.0",
     "eslint-config-airbnb-base": "13.2.0",
     "eslint-plugin-import": "2.18.0",
