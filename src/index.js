@@ -1,20 +1,21 @@
 const axios = require('axios')
 
-const createAxiosInstance = ({ endpoint, username, password }) => {
+const createAxiosInstance = ({ endpoint, username, password }, axiosOptions = {}) => {
   const instance = axios.create({
     baseURL: endpoint,
     auth: {
       username,
       password,
     },
+    ...axiosOptions,
   })
   instance.interceptors.response.use(response => response.data, error => Promise.reject(error))
   return instance
 }
 
 class PushApiClient {
-  constructor(options) {
-    this.axios = createAxiosInstance(options)
+  constructor(options, axiosOptions) {
+    this.axios = createAxiosInstance(options, axiosOptions)
   }
 
   /*
