@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafaeleyng/push-api-client-javascript.git"
+    "url": "git+https://github.com/pushaas/push-api-client-javascript.git"
   },
   "author": "Rafael Eyng",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rafaeleyng/push-api-client-javascript/issues"
+    "url": "https://github.com/pushaas/push-api-client-javascript/issues"
   },
-  "homepage": "https://github.com/rafaeleyng/push-api-client-javascript#readme",
+  "homepage": "https://github.com/pushaas/push-api-client-javascript#readme",
   "devDependencies": {
     "@babel/cli": "7.5.0",
     "@babel/core": "7.5.0",
